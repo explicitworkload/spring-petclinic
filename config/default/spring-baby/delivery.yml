@@ -39,7 +39,7 @@ spec:
           spring-boot-convention/app-live-view-appflavours-boot
           spring-boot-convention/service-intent-mysql
           spring-boot-convention/service-intent-postgres
-        developer.apps.tanzu.vmware.com/image-source-digest: harbor.kubernetes.day/supply-chain/vscode/spring-baby:latest@sha256:70d8728427247d65e84995c31bf931f418579678dc38445315f768f39a2513f1
+        developer.apps.tanzu.vmware.com/image-source-digest: harbor.kubernetes.day/supply-chain/vscode/spring-baby:latest@sha256:788851c29c9f87440604a89368f29d6ae86e211f1a13ce05481b91206300f0a0
         developer.conventions/target-containers: workload
         services.conventions.carto.run/mysql: mysql-connector-java/8.0.29
         services.conventions.carto.run/postgres: postgresql/42.3.6
@@ -67,7 +67,7 @@ spec:
           value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.kubernetes.day/supply-chain/secure/spring-baby-default@sha256:387b176722bfb908fc82444348787a0a3e6043f93b2a5c33d58a45a37062b958
+        image: harbor.kubernetes.day/supply-chain/secure/spring-baby-default@sha256:8bb9991e08a401637bce196f4d2ce4970e2706c1f557e71bb90a26d994af64e5
         livenessProbe:
           httpGet:
             path: /livez
