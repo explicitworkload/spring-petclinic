@@ -53,7 +53,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.kubernetes.day/supply-chain/secure/spring-petclinic-default@sha256:14e61051760bf5e4af5ac9388dd808925130c5035f0a2b0a04e52d251e554167
+        image: harbor.kubernetes.day/supply-chain/secure/spring-petclinic-default@sha256:b8a281093069fb6223838de07bc73e4a3286b3c7d20d1ba7f9b97ce52b2f6f73
         livenessProbe:
           httpGet:
             path: /livez
